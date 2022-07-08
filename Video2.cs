@@ -20,10 +20,10 @@ namespace MyNamespace
 
         CvInvoke.Resize(pic, resizedPic, new System.Drawing.Size(400, 500)); 
 
-        //CvInvoke.Imshow("starry night", pic); 
-        //CvInvoke.Imshow("resized night", resizedPic); 
+        CvInvoke.Imshow("starry night", pic); 
+        CvInvoke.Imshow("resized night", resizedPic); 
 
-        //CvInvoke.WaitKey(); 
+        CvInvoke.WaitKey(); 
 
 
         double angleFourtyFive = 45d; 
@@ -36,9 +36,9 @@ namespace MyNamespace
 
         CvInvoke.WarpAffine(pic, rotatedPic, rotationMatrix, new System.Drawing.Size(width, height)); 
 
-        //CvInvoke.Imshow("rotated night", rotatedPic); 
+        CvInvoke.Imshow("rotated night", rotatedPic); 
 
-       // CvInvoke.WaitKey(); 
+        CvInvoke.WaitKey(); 
 
 
         Image<Bgr, byte> convertPic = pic.ToImage<Bgr, byte>(); 
@@ -53,7 +53,7 @@ namespace MyNamespace
 
                 if (num.Intensity > 0) 
                 {
-                    convertPic[i, j] = new Bgr(convertPic[i,j].MCvScalar.V0 - 50, convertPic[i,j].MCvScalar.V1 + 100, convertPic[i,j].MCvScalar.V2 - 50); 
+                    convertPic[i, j] = new Bgr(convertPic[i,j].MCvScalar.V0 - 50, convertPic[i,j].MCvScalar.V1 - 50, convertPic[i,j].MCvScalar.V2 + 100); 
                 }
             }
 
@@ -61,25 +61,25 @@ namespace MyNamespace
 
         Mat changedPic = convertPic.Mat; 
 
-        //CvInvoke.Imshow("starry night", pic); 
-        //CvInvoke.Imshow("color-shifted night", changedPic); 
+        CvInvoke.Imshow("starry night", pic); 
+        CvInvoke.Imshow("color-shifted night", changedPic); 
 
-        //CvInvoke.WaitKey(); 
+        CvInvoke.WaitKey(); 
 
 
-        float[,] kernalArray = new float[3, 3] {
+        float[,] kernelArray = new float[3, 3] {
             {  -1, -1,  -1},
             { -1,  8, -1},
             {  -1, -1,  -1}
         };
 
-        ConvolutionKernelF kernal = new ConvolutionKernelF(kernalArray); 
+        ConvolutionKernelF kernel = new ConvolutionKernelF(kernelArray); 
 
         Mat filteredPic = new Mat(); 
 
         pic.CopyTo(filteredPic);
 
-        CvInvoke.Filter2D(pic, filteredPic, kernal, new System.Drawing.Point(0, 0)); 
+        CvInvoke.Filter2D(pic, filteredPic, kernel, new System.Drawing.Point(0, 0)); 
 
         CvInvoke.Imshow("convoluted night", filteredPic); 
         CvInvoke.WaitKey(); 

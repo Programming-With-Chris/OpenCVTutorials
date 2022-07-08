@@ -14,7 +14,7 @@ namespace myNamespace
 
         Mat gaussianBlur = new Mat(); 
 
-        CvInvoke.GaussianBlur(pic, gaussianBlur, new System.Drawing.Size(pic.Rows, pic.Cols), 7.0); 
+        CvInvoke.GaussianBlur(pic, gaussianBlur, new System.Drawing.Size(3, 3), 7.0); 
 
         CvInvoke.Imshow("starry night", pic); 
         CvInvoke.Imshow("blurry night", gaussianBlur); 
