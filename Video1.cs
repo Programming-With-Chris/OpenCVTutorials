@@ -6,7 +6,7 @@ namespace myNamespace
 {
   class Video1 
   {
-    static void Main(string[] args)
+    /*static void Main(string[] args)
     {
         Mat pic = new Mat(); 
 
@@ -21,6 +21,6 @@ namespace myNamespace
 
 
         CvInvoke.WaitKey(); 
-    }
+    }*/
   }
 }
