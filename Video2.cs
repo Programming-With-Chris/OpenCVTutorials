@@ -8,7 +8,7 @@ namespace MyNamespace
 {
   class Program 
   {
-    static void Main(string[] args)
+    /*static void Main(string[] args)
     {
         Mat pic = CvInvoke.Imread("./img/starrynight.jpg"); 
         Mat resizedPic = new Mat(); 
@@ -84,6 +84,6 @@ namespace MyNamespace
         CvInvoke.Imshow("convoluted night", filteredPic); 
         CvInvoke.WaitKey(); 
 
-    }
+    }*/
   }
 }
