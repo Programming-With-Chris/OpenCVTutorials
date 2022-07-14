@@ -6,3 +6,5 @@ Video 1 link - [Youtube](https://youtu.be/YTBAjP-0Fto) - Covers the Mat structur
 Video 2 link - [Youtube](https://youtu.be/LARuIN9dask) - Covers Image Manipulation, resizing and rotation, changing the colors of an image, and applying Convolution kernels to an image to produce a desired effect. 
 
 Video 3 link - [Youtube](https://youtu.be/wuQsW-LZ3kw) - Covers Edge Detection and Contours, Sobel, Canny, and then using contours to fill an image. 
+
+Video 4 link - [Youtube](https://youtu.be/AAV3a_ngSUc) - Covers Template Matching in Emgu and OpenCV, and then shows an example of using that to visually grade a student's multiple choice test. 
