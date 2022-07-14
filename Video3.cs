@@ -7,7 +7,7 @@ namespace myNamespace
 {
   class Program 
   {
-    static void Main(string[] args)
+   /* static void Main(string[] args)
     {
        Mat pic = CvInvoke.Imread("./img/dog.jpg"); 
 
@@ -71,6 +71,6 @@ namespace myNamespace
 
       CvInvoke.WaitKey(); 
 
-    }
+    }*/
   }
 }
