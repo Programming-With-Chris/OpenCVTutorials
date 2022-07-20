@@ -6,7 +6,7 @@ namespace ourNamespace
 {
   class Program 
   {
-    static void Main(string[] args)
+    /*static void Main(string[] args)
     {
         Mat answeredPic = CvInvoke.Imread("./img/GraderPage-Answered.jpg");
         Mat aWasAnswered = CvInvoke.Imread("./img/A_abcd.jpg"); 
@@ -48,6 +48,6 @@ namespace ourNamespace
 
         CvInvoke.WaitKey(); 
 
-    }
+    }*/
   }
 }
