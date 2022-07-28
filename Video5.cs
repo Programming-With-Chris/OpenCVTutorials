@@ -6,7 +6,7 @@ namespace ourNamespace
 {
   class Video5 
   {
-    static void Main(string[] args)
+    /*static void Main(string[] args)
     {
         var vc = new VideoCapture(0, VideoCapture.API.DShow); 
 
@@ -45,7 +45,7 @@ namespace ourNamespace
                         CvInvoke.Rectangle(frame, box, new Emgu.CV.Structure.MCvScalar(0, 255, 0), 2); 
                     }
                 }
-            }*/
+            }
 
             Image<Bgr, byte> convertFrame = frame.ToImage<Bgr, byte>(); 
             var image = convertFrame.InRange(new Bgr(75, 0, 0), new Bgr(255, 190, 190)); 
@@ -73,6 +73,6 @@ namespace ourNamespace
         }
 
 
-    }
+    }*/
   }
 }
