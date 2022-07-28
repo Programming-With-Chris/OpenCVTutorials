@@ -10,3 +10,5 @@ Video 3 link - [Youtube](https://youtu.be/wuQsW-LZ3kw) - Covers Edge Detection a
 Video 4 link - [Youtube](https://youtu.be/AAV3a_ngSUc) - Covers Template Matching in Emgu and OpenCV, and then shows an example of using that to visually grade a student's multiple choice test. 
 
 Video 5 link - [Youtube](https://www.youtube.com/watch?v=JjQgemNtEZA) - Covers Video, how to capture from a webcam, and then how to manipulate frames to change the video stream shown.
+
+Video 6 link - [Youtube](https://youtu.be/v7_g1Zoapkg) - Covers Object Detection with Haar Cascade Classifiers and the YOLO Object Detection algorithm. 
